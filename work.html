@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/work.css" type="text/css">
     <title>Kappa</title>
 </head>
 
@@ -23,10 +23,10 @@
             <div id="menu">
                 <ul class="widget-list">
                     <a href="home.html">
-                        <li class="active">Home</li>
+                        <li> Home</li>
                     </a>
                     <a href="work.html">
-                        <li>Work</li>
+                        <li class="active">Work</li>
                     </a>
                     <a href="#">
                         <li>About</li>
@@ -70,40 +70,44 @@
         </div>
     </section>
     <section class="main">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
+
+        <div class="left">
+            <div class="leftPhoto">
+                <img src="images/Layer_72.png" alt="">
+            </div>
+            <div class="leftText">
+                <h2>
+                    Heavy Sand - Creative Photography
+                </h2>
+                <p>
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                </p>
+            </div>
+            <div class="leftPlus">
+                <h2>
+                    Related Projects
+                </h2>
+                <div class="leftPlusPhoto">
+                    <img src="images/Layer_85.png" alt="">
+                    <img src="images/Layer_86.png" alt="">
+                    <img src="images/Layer_85.png" alt="">
+                    <img src="images/Layer_86.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="right" id="project">
+            <h2>{{ title }}</h2>
+            <ul>
+                <li v-for="item in items">
+                    {{item.info}}
+                </li>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <script src="work.js"></script>
     </section>
-    <div class="contacts">
-        <p>
-            <img src="images/cont1.png"> 9930 1234 5679
-        </p>
-        <p>
-            <img src="images/cont2.png"> contact@domain.com
-        </p>
-        <p>
-            <img src="images/cont3.png"> street address example
-        </p>
-    </div>
+
 </body>
 
 </html>

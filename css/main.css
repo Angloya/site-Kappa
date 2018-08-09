@@ -7,7 +7,7 @@
 }
 
 body {
-    max-width: 1920px width: 100%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     background: #e8e8e8;
     display: inline-flex;
@@ -17,7 +17,20 @@ body {
 }
 
 body::-webkit-scrollbar {
+    width: 4px;
+    background: #000000;
+}
+body::-webkit-scrollbar-thumb:vertical {
+    width: 4px;
+    background: #ffffff;
+}
+body::-webkit-scrollbar-thumb:horizontal  {
+   display: none;
+    background: #ffffff;
+}
+body::-webkit-scrollbar:horizontal {
     width: 0px;
+    display: none;
     background: #000000;
 }
 
@@ -25,7 +38,7 @@ body::-webkit-scrollbar {
     text-align: right;
     min-width: 300px;
     width: 19%;
-    height: 1080px;
+    height: 100%;
     position: sticky;
     top: 0px;
     min-height: 680px;
@@ -38,11 +51,14 @@ body::-webkit-scrollbar {
 }
 
 .sidebar::-webkit-scrollbar {
-    width: 0px;
-    background: #000000;
+    width: 4px;
+    background: #242b2e;
 }
 
-
+.sidebar::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: #ffffff;
+}
 .widget-title {
     background: #ffffff;
     height: 125px;
@@ -80,8 +96,10 @@ body::-webkit-scrollbar {
 .widget-list li.active {
     background: #1ab5b3;
 }
-
 .widget-list a {
+  text-decoration: none;  
+}
+.widget-list a li{
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
@@ -99,7 +117,7 @@ body::-webkit-scrollbar {
     padding-top: 20px;
 }
 
-.widget-filter li a {
+.widget-filter li a{
     text-decoration: none;
     color: #ffffff;
     font-size: 13px;
@@ -109,7 +127,7 @@ body::-webkit-scrollbar {
     opacity: 0.2;
 }
 
-.widget-filter li a:hover {
+.widget-filter a li:hover {
     opacity: 1;
 }
 
@@ -157,15 +175,11 @@ body::-webkit-scrollbar {
 
 /*основной блок*/
 
-.main {
-    max-width: 1620px;
+.main { 
     width: 81%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.main img {
-    height: 311px;
-    width: 405px;
-}
+
