@@ -37,7 +37,7 @@
                     <a href="#">
                         <li>Services</li>
                     </a>
-                    <a href="#">
+                    <a href="contacts.html">
                         <li>Contact</li>
                     </a>
                 </ul>
@@ -90,19 +90,70 @@
                 </h2>
                 <div class="leftPlusPhoto">
                     <img src="images/Layer_85.png" alt="">
-                    <img src="images/Layer_86.png" alt="">
+                    <img src="images/Layer_85.png" alt="">
                     <img src="images/Layer_85.png" alt="">
                     <img src="images/Layer_86.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="right" id="project">
-            <h2>{{ title }}</h2>
-            <ul>
-                <li v-for="item in items">
-                    {{item.info}}
-                </li>
-            </ul>
+        <div id="projects" class="right">
+                <h2> Related Projects</h2>
+                <div >
+                <div class="projects">
+                <img src="images/Layer_85.png" alt="" v-on:click="showDetail =! showDetail">
+                <img src="images/Layer_85.png" alt="" v-on:click="showDetail =! showDetail">
+                <img src="images/Layer_85.png" alt="" v-on:click="showDetail =! showDetail">
+                <img src="images/Layer_85.png" alt="" v-on:click="showDetail =! showDetail">
+                <img src="images/Layer_85.png" alt="" v-on:click="showDetail =! showDetail">
+                <img src="images/Layer_85.png" alt="" v-on:click="showDetail =! showDetail">
+                    </div>
+                <div v-show="showDetail">
+                    <h2>{{ title }}</h2>
+                    <div class="inform">
+                        <ul>
+                            <li>
+                                <img src="images/work.1.png" alt=""> {{login}}
+                            </li>
+                            <li>
+                                <img src="images/work.2.png" alt=""> {{likes}}
+                            </li>
+                            <li>
+                                <img src="images/work.3.png" alt=""> {{date}}
+                            </li>
+                            <li>
+                                <img src="images/work4.png" alt=""> {{comments}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <h2>{{title2}}</h2>
+                        <ul>
+                            <li v-for="filter in filters">
+                                {{filter.tag}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery">
+                        <h2>
+                            {{title3}}
+                        </h2>
+                        <ul>
+                            <li v-for="image in images">
+                                <img :src="image.elem"></li>
+                        </ul>
+                    </div>
+                    <div class="features">
+                        <h2>
+                            {{title4}}
+                        </h2>
+                        <ul>
+                            <li v-for="item in items">
+                                <img src="images/oke.png" alt=""> {{item.info}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
         <script src="work.js"></script>

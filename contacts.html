@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/contacts.css" type="text/css">
     <title>Kappa</title>
 </head>
 
@@ -23,7 +23,7 @@
             <div id="menu">
                 <ul class="widget-list">
                     <a href="home.html">
-                        <li class="active">Home</li>
+                        <li> Home</li>
                     </a>
                     <a href="work.html">
                         <li>Work</li>
@@ -38,7 +38,7 @@
                         <li>Services</li>
                     </a>
                     <a href="contacts.html">
-                        <li>Contact</li>
+                        <li class="active">Contact</li>
                     </a>
                 </ul>
             </div>
@@ -70,40 +70,33 @@
         </div>
     </section>
     <section class="main">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
-        <img src="images/Layer_125.png" alt="">
-        <img src="images/Layer_114.png" alt="">
+        <div class="message">
+            <div class="get">
+                <h2>
+                    Get in touch with us
+                </h2>
+                <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+            </div>
+            <div class="send">
+                <h2>Send us a message</h2>
+                <div class="form">
+  <form action="handler.php" method="post" name="comment" id="comment">
+  <fieldset>
+<input class="comment" type="text" name="Name" placeholder="Full Name" id="Name" value=""  required/>
+<input class="comment" type="text" name="email" placeholder="Mail" id="email" value=""  required/>
+<input class="comment" type="text" placeholder="website" name="website" id="website" value="" />
+   </fieldset>
+   <fieldset>
+<textarea class="mess" id="message" name="message" placeholder="Message"  required></textarea>
+
+<input class="comment" name="submit" type="submit" id="submit" value="Send now!" />
+      </fieldset>
+</form>
+                </div>
+            </div>
+        </div>
     </section>
-    <div class="contacts">
-        <p>
-            <img src="images/cont1.png"> 9930 1234 5679
-        </p>
-        <p>
-            <img src="images/cont2.png"> contact@domain.com
-        </p>
-        <p>
-            <img src="images/cont3.png"> street address example
-        </p>
-    </div>
+
 </body>
 
 </html>
