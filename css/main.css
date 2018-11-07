@@ -20,14 +20,17 @@ body::-webkit-scrollbar {
     width: 4px;
     background: #000000;
 }
+
 body::-webkit-scrollbar-thumb:vertical {
     width: 4px;
     background: #ffffff;
 }
-body::-webkit-scrollbar-thumb:horizontal  {
-   display: none;
+
+body::-webkit-scrollbar-thumb:horizontal {
+    display: none;
     background: #ffffff;
 }
+
 body::-webkit-scrollbar:horizontal {
     width: 0px;
     display: none;
@@ -59,6 +62,7 @@ body::-webkit-scrollbar:horizontal {
     width: 4px;
     background: #ffffff;
 }
+
 .widget-title {
     background: #ffffff;
     height: 125px;
@@ -96,10 +100,12 @@ body::-webkit-scrollbar:horizontal {
 .widget-list li.active {
     background: #1ab5b3;
 }
+
 .widget-list a {
-  text-decoration: none;  
+    text-decoration: none;
 }
-.widget-list a li{
+
+.widget-list a li {
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
@@ -117,7 +123,7 @@ body::-webkit-scrollbar:horizontal {
     padding-top: 20px;
 }
 
-.widget-filter li a{
+.widget-filter li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 13px;
@@ -127,7 +133,7 @@ body::-webkit-scrollbar:horizontal {
     opacity: 0.2;
 }
 
-.widget-filter a li:hover {
+.widget-filter li a:hover {
     opacity: 1;
 }
 
@@ -175,11 +181,8 @@ body::-webkit-scrollbar:horizontal {
 
 /*основной блок*/
 
-.main { 
-    width: 81%;
+.main {
     display: flex;
     flex-wrap: wrap;
-
+    width: 100%;
 }
-
-
